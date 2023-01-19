@@ -28,8 +28,10 @@
             >WEB<span class="studio-header">STUDIO</span></a
           >
           <ul class="menu list">
-            <li class="menu-item ">
-              <a class="menu-link menu-link-index link" href="index.html">Studio</a>
+            <li class="menu-item">
+              <a class="menu-link menu-link-index link" href="index.html"
+                >Studio</a
+              >
             </li>
             <li class="menu-item">
               <a class="menu-link link" href="portfolio.html">Portfolio</a>
@@ -64,7 +66,7 @@
             Effective Solutions <br />
             for Your Business
           </h1>
-          <button class="btn-order button" type="button">Order Service</button>
+          <button class="btn-order button" data-modal-open type="button">Order Service</button>
         </div>
       </section>
 
@@ -100,7 +102,7 @@
               </svg>
               <h3 class="suptitle">Diligence</h3>
               <p class="section-description-theme-light">
-                Research and confirm brands that present the strongest digital
+                Research and confirm brands that present the strongest digita
                 growth opportunities and minimize risk.
               </p>
             </li>
@@ -437,5 +439,20 @@
         </div>
       </div>
     </footer>
-  </body>
+
+   
+ <!-- ==================================MODAL-WINDOW ==========================-->
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="modal-close-btn-icon" width="8px"  height="8px">
+          <use href="./images/icons.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
+
+</body>
 </html>
