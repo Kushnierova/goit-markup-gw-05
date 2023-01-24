@@ -470,11 +470,14 @@ address {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
 
+  transform: scale(1);
   transition: opacity var(--duration) var(--timing-function),
-    visibility var(--duration) var(--timing-function);
+    visibility var(--duration) var(--timing-function),
+    transform var(--duration) var(--timing-function);
 }
 
 .backdrop.is-hidden {
+  transform: scale(0);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
